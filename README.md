@@ -12,3 +12,6 @@ E a pasta Imagem - em andamento tras alguns exemplos de imagens de capa
 
 Este projeto usa BootStrap, fawesome, mongoose e mongoDB
 
+Hospedagem temporária do código:
+
+https://github.com/BluedHat/SantandersCoders-_Angular/tree/master
