@@ -1,0 +1,50 @@
+<div class="modal-body">
+  <form [formGroup]="formEditBook" (ngSubmit)="editBook()" autocomplete="on">
+    <div>
+        <label for='id'>ID:</label>     
+        <input type="text"    
+        id='inputId' 
+        formControlName="name"
+        required>
+       <br> 
+       <label for='title'>Titulo:</label>     
+       <input type="text"    
+        id='inputTitle' 
+        formControlName="name"
+        required>
+       <br> 
+       <label for='genre'>Genero:</label>
+       <input type="text"    
+        id='inputGenre' 
+        formControlName="genre"> 
+       <br>
+       <label for='author'>Autor:</label>
+       <input type="text"   
+        id='inputAuthor'formControlName="author"><br>
+       <label for='price'>Preço:</label> 
+       <input type="number" 
+        id='inputPrice' 
+        formControlName="price">
+       <br> 
+       <label for='qtt'>Quantidade:</label>
+       <input type="number" 
+        id='inputQtt'  
+        formControlName="qtt">
+       <br> 
+       <label for='img'>Capa(url):</label>
+       <input type="url"  
+        id='inputImg'  
+        formControlName="img"> 
+       <br>
+       <label for='rsme'>Resumo:</label>
+       <br><textarea type="text" 
+        id='inputResume'
+        cols="35" 
+        rows="8" 
+        formControlName="rsme">
+       </textarea> 
+       <br>
+    </div>
+    <button type="submit" [disabled]="!formEditBook.valid">Editar Livro</button>
+  </form>
+</div>

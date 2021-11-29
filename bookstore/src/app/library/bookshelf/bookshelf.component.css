@@ -1,0 +1,58 @@
+/* Menu Principal */
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip:border-box;
+    border: 1px solid black;
+    border-radius: .25rem;
+}
+
+.menu{
+    margin: 0px 15px ;
+    text-align: center;
+}
+
+.menu img{
+    width: 64px;
+}
+
+.menu a :hover{
+    color: blue;
+}
+
+.menuicon{
+    width: 62px;
+    margin: top 5px; ;
+}
+
+/*  Produtos */
+.card img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px ;
+    transition: 0.3s ease-in-out;
+}
+
+.card img:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.card{
+    padding:20px ;
+    margin: 50px;
+}
+
+.call{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100ch;
+}
+
+
+

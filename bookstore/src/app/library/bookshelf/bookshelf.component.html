@@ -1,0 +1,40 @@
+<!-- Menu -->
+<div class="card-top container-fluid">
+    <div class="container-d-flex">
+        <div class="menu">
+            <a >
+                <!-- <img class="menuicon" src="" alt=""> -->
+                <h6 routerLink="/manager">Manager</h6>
+             </a>
+        </div>
+    </div>
+</div>
+
+<!-- Livros -->
+<div class="class container">
+    <div class="class row">
+      <ng-container *ngFor="let book of bookList |search:searchKey:'title'"> 
+        <div class="class card">
+            <div class="class card-col-md-3">
+                <img [src] alt="">
+                <h5 class="call">Título: {{book.title}}</h5>
+                <p  class="call">Gênero: {{book.genre}}</p>
+                <p  class="call">Autor:  {{book.author}}</p>
+                <p><strong>Price</strong>{{book.price |currency:'BRL'}}</p>
+                <p> Disponíveis: {{book.quantity}}</p>
+                <!-- ToDo finalizar abrir resumo e Salvar Livro -->
+                <!-- <button class="bookaction"> 
+                    Resumo         
+                </button>
+                <button class="bookaction"> 
+                    Salvar         
+                </button> -->
+                <button class="bookaction" (click)=addtocart(book)> 
+                    Comprar         
+                </button>
+
+            </div>
+        </div>
+      </ng-container> 
+    </div>
+</div>

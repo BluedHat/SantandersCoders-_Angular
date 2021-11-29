@@ -1,0 +1,28 @@
+<header>
+    <div class="navbar-dark bg-warning shadow-sm"> <!-- yellow egg -->
+        <div class="navbar-brand align-item-center d-flex">
+            <i id="logo" class="fas fa-book"> 
+            </i> &nbsp;
+            <i id="logo" class="fas fa-truck-moving">  
+            </i> &nbsp;     
+            <strong class="call">The</strong>&nbsp;              
+            <strong class="call">BookStore</strong>&nbsp; 
+            <div class="form-search">
+                 <input type="text" class="form-control" [(ngModel)]="searchWord" (keyup)="search($event)"  placeholder="buscar livros">
+            </div>
+            <span  class="fas fa-search"></span> 
+            
+            <!-- ToDo -  Finalizar guardar para depois -->
+            <!-- <button  id="btn_shopper" class="byn btn-warning btn-sm">
+                <i   class="fas fa-bath"></i>
+                <div style="font-size:10px" class="badge bg-danger">8</div>
+            </button> -->
+            <button  routerLink="cart" id="btn_shopper" class="byn btn-warning btn-sm" >
+             <i   class="fas fa-dolly"></i>
+             <div style="font-size:10px" class="badge bg-danger">{{totalShopper}}</div>
+            </button>
+         </div>
+
+    </div>
+</header> 
+

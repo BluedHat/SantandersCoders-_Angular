@@ -1,0 +1,96 @@
+<!-- Menu -->
+<div class="card-top container-fluid">
+    <div class="container-d-flex">
+        <div class="menu">
+            <a >
+                <!-- <img class="menuicon" src="" alt=""> -->
+                <h6 routerLink="/livros">Books</h6>
+             </a>
+        </div>
+    </div>
+</div>
+<ng-container>
+    <div class="class container">
+        <div class="class card">
+            <h5 class="class card-title">Manager</h5>
+        </div><div class="class center">
+            <img src="" alt="">
+              <table>
+                  <tbody>
+                     <tr>
+                            <td><button class="btn btn-success"  id="add-btn"  (click)="clickInsert()" data-bs-toggle="modal" data-bs-target="#exampleModalInclude" >Incluir Livro</button></td>
+                            <td><button class="btn btn-warning"  >Pesquisar Livro</button></td>
+                            <td><button class="btn btn-primary"  id="add-btn"  (click)="clickEdit()" data-bs-toggle="modal"   data-bs-target="#exampleModalEdit"    >Editar Livro</button></td>
+                            <td><button class="btn btn-danger"   id="add-btn"  (click)="clickRemove()" data-bs-toggle="modal" data-bs-target="#exampleModalRemove">Remover Livro</button></td>
+                     </tr>
+                 </tbody>
+              </table>
+        </div>
+    </div>
+</ng-container>
+
+<!-- Formularios -->
+
+<!-- incluir  -->
+
+<div class="modal fade" id="exampleModalInclude" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Incluir Livro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <app-add-book></app-add-book>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Editar  ToDo-->
+
+<!-- <div class="modal fade" id="exampleModalEdit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Editar Livro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <app-edit-book></app-edit-book>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- Remover  ToDo-->
+<!-- <div class="modal fade" id="exampleModalRemove" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Remover Livro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <app-delete-book></app-delete-book>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- Pesquisar  -->
+
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Buscar Livro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <app-search-book></app-search-book>
+            </div>
+        </div>
+    </div>
+</div> -->

@@ -1,0 +1,38 @@
+#logo{
+  margin-top: 10px;
+  margin-left: 10px;  
+  font-size: 40px;
+  color: black; 
+}
+strong{
+    margin-top: 10px;
+    margin-left: 10px; 
+    font-size: 60px;
+ }
+ 
+ .form-search{
+     border-radius: 5px;
+     width: 600px;
+     margin-top: 15px;
+     margin-left: 20px;
+ }
+ 
+.fa-search{
+     position: absolute;
+     z-index: 10;
+     right: 57%;
+     top: 8%;
+     color:black;
+ }
+ 
+ .call{
+     font-size:30px;
+ }
+ 
+#btn_shopper{
+    margin-left: 10px;
+    right: 75%;
+
+}
+ 
+ 
